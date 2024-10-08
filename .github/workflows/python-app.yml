@@ -29,7 +29,7 @@ jobs:
     - name: Run the Flask application
       run: |
         nohup make run & 
-        sleep 10  # Give the server time to start
+        sleep 20  # Give the server time to start
     - name: Test if the application is running
       run: |
         curl -f http://localhost:3000 || exit 1
